@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(169deg, rgb(0 0 0) 0%, rgb(61 61 61) 67%) no-repeat;
+}
+
+/* Header & Searchbar */
+header,
+.searcher-container {
+    background-color: #040404;
+}
+
+/* Spinner */
+.spinner-border {
+    width: 8rem!important; 
+    height: 8rem!important;
+}
+
+/* Form controls */
+.form-control#searchInpt {
+    border-right: none;
+}
+
+.form-control#searchInpt:focus {
+    border-color: #ced4da;
+    box-shadow: none!important;
+}
+
+#button-addon3 {
+    border-left: 0;
+    border-style: solid;
+    border-color: #ced4da;
+    border-top-right-radius: 0.25rem;
+    background-color: #fff!important;
+    border-bottom-right-radius: 0.25rem;
+}
+
+/* List items */
+.list-group-item {
+    padding: 0.5rem;
+}
+
+.list-group-item-action:focus, 
+.list-group-item-action:hover {
+    background-color: #fff!important;
+}
+
+/* Cards */
+.card:hover {
+    opacity: 0.9;
+}
+
+div:hover > div > div.col-4.d-flex.justify-content-center.align-items-center.bg-dark.text-light > img {
+    transform: scale(0.9);
+    transition: transform .2s;
+}
+
+.card-body {
+    padding: 0 0 0 1rem;
+}
+
+.bi.bi-vinyl {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 422px) {
+    .card-title { font-size: 1rem; }
+    .card-text { font-size: .80rem;}
+}
+
+@media screen and (max-width: 390px) {
+    .card-text.text-truncate { max-width: 110px; }
+}
+@media screen and (min-width: 391px) and (max-width: 767px) {
+    .card-text.text-truncate { max-width: 180px; }
+}
+@media screen and (min-width: 768px) {
+    .card-text.text-truncate { max-width: 320px; }
+}
+
+/* Splash */
+#splash {
+    opacity: 1;
+    width:100%; 
+    height:100vh; 
+    z-index: 11111;
+    position: fixed; 
+    background: rgb(61 61 61);
+    background: linear-gradient(169deg, rgb(0 0 0) 0%, rgb(61 61 61) 67%);
+    animation: splashAnimation 4s ease-in-out forwards;
+}
+
+.home-splash-img,
+#splash .splash-img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.home-deezer-img {
+    width: 20px;
+    object-fit: contain;
+}
+
+@keyframes splashAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
